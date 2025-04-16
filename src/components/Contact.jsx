@@ -116,14 +116,39 @@ const Contact = () => {
       </motion.a>
 
       <motion.a
+            whileHover={{ y: -3, scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            href="https://facebook.com/shree.akm"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            className="hover:shadow-lg hover:shadow-[#1877f2]/50 rounded-full p-1"
+          >
+            <FaFacebookF className="text-xl text-white hover:text-[#1877f2] transition-colors" />
+          </motion.a>
+
+      <motion.a
         whileHover={{ y: -2 }}
         href="https://twitter.com/Rajshre58266522"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Twitter"
       >
-        <FaXTwitter className="text-xl text-white hover:text-[#000000] transition-colors" />
+        <FaXTwitter className="text-xl text-white hover:text-[#504d4d] transition-colors" />
       </motion.a>
+      
+      <motion.a
+            whileHover={{ y: -3, scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            href="mailto:rajshreeakm@gmail.com"
+            aria-label="Email"
+            className="hover:shadow-lg hover:shadow-[#ea4335]/50 rounded-full p-1"
+          >
+            <FaEnvelope className="text-2xl text-white hover:text-[#ea4335] transition-colors" />
+          </motion.a>
+
+      
+
     </div>
   </div>
   <h3 className={styles.sectionHeadText}>Contact.</h3>
