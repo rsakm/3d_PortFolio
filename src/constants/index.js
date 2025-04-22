@@ -8,19 +8,17 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
   figma,
-
-  threejs,
   cLanguage,
   java,
   hat,
-  recoil, jobportal, streamVibe,nations,live,piyush,sandeep,raja
+  recoil, jobportal, streamVibe,nations,piyush,sandeep,raja
 } from "../assets";
+
 import writingIcon from '../assets/writing.png'; // Default import for images
 export const navLinks = [
   {
@@ -34,7 +32,12 @@ export const navLinks = [
   {
     id: "contact",
     title: "Contact",
+
   },
+  {
+    id:"writings",
+    title:"Writings"
+  }
 ];
 
 const services = [
@@ -274,4 +277,47 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+
+const writings = [
+  {
+    title: "मैं और मेरी उलझनें",
+    excerpt: "A heartfelt reflection on inner chaos, self-doubt, and the quiet strength that rises from within. मैं और मेरी उलझनें is a poetic journey through uncertainty, resilience, and hope...",
+    tags: [
+      { name: "poetry", color: "text-pink-400" },
+      { name: "reflection", color: "text-gray-300" },
+    ],
+    image: "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*crI1nfVN5Nqn7jaJbF_gkA.jpeg",
+    article_link: "https://medium.com/@rajshreee/खुद-से-ही-खुद-में-उलझा-हुआ-खुद-से-ही-अनजान-हूं-मैं-चार-दीवारों-से-ही-है-दोस्ती-मेरी-जैसे-कोई-5b3bc346987d",
+    type: "poetry",
+    date: "April 22, 2025",
+    readTime: "2 min read",
+  },
+  {
+    title: "Why vite over cra",
+    excerpt: "Discover how switching to Vite gave my React projects a serious speed boost — with better performance, and a smoother developer experience...",
+    tags: [
+      { name: "tech", color: "text-blue-400" },
+      { name: "reactvite", color: "text-green-400" },
+    ],
+    image: "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*U-kGVmQNgaBnOA_CDBGXMQ.png",
+    article_link: "https://rajshreee.medium.com/why-i-chose-vite-over-create-react-app-and-never-looked-back-b6259b05ba02",
+    type: "tech",
+    date: "April 22, 2025",
+    readTime: "3 min read",
+  },
+  {
+    title: "I describe myself as",
+    excerpt: "A poetic self-portrait of contrasts — passionate yet reflective, expressive yet grounded.A glimpse into the heart and mind of someone who’s still discovering himself...",
+    tags: [
+      { name: "poetry", color: "text-pink-400" },
+      { name: "reflection", color: "text-gray-300" },
+    ],
+    image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*4u4Lvm2rdTm_man5wBDMPw.jpeg",
+    article_link: "https://medium.com/@rajshreee/i-describe-myself-as-4329b2e2e02a",
+    type: "poetry",
+    date: "January 12, 2025",
+    readTime: "2 min read",
+  },
+];
+
+export { services, technologies, experiences, testimonials, projects, writings};
