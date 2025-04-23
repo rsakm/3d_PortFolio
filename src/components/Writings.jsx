@@ -84,7 +84,7 @@ const Writings = () => {
 
       <div className='mt-10 flex justify-center'>
         <button
-          onClick={() => window.open("https://medium.com/@rajshr", "_blank")}
+          onClick={() => window.open("https://medium.com/@rajshreee", "_blank")}
           className='bg-primary text-white px-6 py-3 rounded-full text-lg hover:bg-secondary transition-all'
         >
           View More on Medium
